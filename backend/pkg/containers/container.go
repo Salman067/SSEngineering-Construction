@@ -29,6 +29,9 @@ func Init(router *gin.Engine) {
 	routes.UserRoutes(router, userController)
 	routes.BlogRoutes(router, blogController)
 
+	router.GET("/", func(c *gin.Context) {
+		c.JSON(200, gin.H{"message": "Hello, World!"})
+	})
 	// Start the Gin server
 	log.Fatal(router.Run(":8080"))
 }

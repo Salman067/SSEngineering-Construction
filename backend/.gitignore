@@ -4,3 +4,4 @@
 # Ignore MySQL data directory and ca-key.pem file specifically
 mysql-data/
 mysql-data/ca-key.pem
+.vercel
