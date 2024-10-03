@@ -1,0 +1,12 @@
+{
+    "builds": [
+      {
+        "src": "backend/main.go",
+        "use": "@vercel/go"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "backend/main.go" }
+    ]
+  }
+  
